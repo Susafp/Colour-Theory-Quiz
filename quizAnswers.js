@@ -2,7 +2,7 @@ const correctAnswers = ['A', 'B', 'B', 'A', 'B'];
 
 const form = document.querySelector('.quiz-form');  
 
-const result = document.querySelector('.result');   
+const result = document.querySelector('.result');  
 
 form.addEventListener('submit', e => {                 // e = event
     e.preventDefault();                                // prevent browser from default refresh page
@@ -18,7 +18,8 @@ form.addEventListener('submit', e => {                 // e = event
           score += 20;
         }
     });
-  
+    
+
     result.classList.remove('d-none');
 
     scrollTo(0,0);                         
@@ -36,4 +37,10 @@ form.addEventListener('submit', e => {                 // e = event
         output++;                                               // keep adding until it reachs the users score
       }
     }, 10);
+
   });
+
+
+  
+
+
